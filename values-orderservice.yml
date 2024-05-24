@@ -1,0 +1,11 @@
+image:
+  tag: main-c318f0e
+env:
+  GIN_MODE: release
+  DB_HOST: mariadb
+  DB_USER: appuser
+  DB_PASSWORD: secretpassword
+  DB_NAME: my_database
+  OTLP_ENDPOINT: <YOUR_OTLP_COLLECTOR>
+  PAYMENT_SERVICE_URL: http://paymentservice:8091
+  

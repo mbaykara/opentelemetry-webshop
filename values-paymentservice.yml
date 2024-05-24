@@ -1,0 +1,16 @@
+
+image:
+  repository: baykara/paymetnservice
+  tag: main-c318f0e
+
+env:
+  GIN_MODE: release
+  DB_HOST: mariadb
+  DB_USER: appuser
+  DB_PASSWORD: secretpassword
+  DB_NAME: my_database
+  ORDER_SERVICE: http://orderservice:8090
+  OTLP_ENDPOINT: <YOUR_OTLP_COLLECTOR>
+
+ingress:
+  enabled: false
