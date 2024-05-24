@@ -56,4 +56,6 @@ hey -n 1000000 -c 100  -m GET  http://orderservice.default:8090/orders/2
 
 
 ### Force out of bound in DB 500 Errors
+```bash
 hey -n 1000  -m POST   -H 'Content-Type: application/json' -d '{"order_id":444444445554,"amount": 100,"status": "pending"}' http://paymentservice.default:8091/payments
+```
