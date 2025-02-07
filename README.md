@@ -20,7 +20,7 @@ Services
 
 ```bash
 helm install orderservice ./order/chart -f values-orderservice.yml
-helm install paymentservice ./payment/chart -values-paymentservice.yml
+helm install paymentservice ./payment/chart -f values-paymentservice.yml
 ```
 
 Create an order
